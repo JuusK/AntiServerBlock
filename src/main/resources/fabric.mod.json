@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "antiserverblock",
+  "version": "${version}",
+  "name": "AntiServerBlock",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/antiserverblock/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.juusk.antiserverblock.client.AntiServerBlockClient"
+    ],
+    "main": [
+      "me.juusk.antiserverblock.AntiServerBlock"
+    ]
+  },
+  "mixins": [
+    "antiserverblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
